@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AppBar from "./components/AppBar";
+import Sidebar from "./components/Sidebar";
+import Home from "./components/Home";
+import AboutMe from "./components/AboutMe";
+import MySchool from "./components/MySchool";
+import CardList from "./components/CardList";
+import { Button } from "@mui/material";
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showCards, setShowCards] = useState(false);
+
+  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
+  const handleShowCards = () => setShowCards(!showCards);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{ fontFamily: "Arial, sans-serif", textAlign: "center", backgroundColor: "#d6a4e1", minHeight: "100vh" }}>
+        <AppBar onMenuClick={toggleSidebar} />
+        <Sidebar open={sidebarOpen} onClose={toggleSidebar} />
+        <div style={{ padding: "1rem" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={handleShowCards}
+            sx={{ marginBottom: "1rem" }}
+          >
+            {showCards ? "Hide My Details" : "View My Details"}
+          </Button>
+          <CardList showCards={showCards} />
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-me" element={<AboutMe />} />
+          <Route path="/my-school" element={<MySchool />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
