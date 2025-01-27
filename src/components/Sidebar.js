@@ -1,50 +1,26 @@
-import React, { useEffect, useState } from "react";
-import { Avatar } from "@mui/material";
-import axios from "axios";
+import React from "react";
+import { Drawer, List, ListItem, ListItemText } from "@mui/material";
+import { Link } from "react-router-dom";
 
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "2rem",
-    textAlign: "center",
-  },
-  avatar: {
-    width: 200,
-    height: 200,
-    marginBottom: "1.5rem",
-  },
+const Sidebar = ({ open, onClose }) => {
+  return (
+    <Drawer open={open} onClose={onClose}>
+      <List>
+        <ListItem button component={Link} to="/" onClick={onClose}>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button component={Link} to="/about-me" onClick={onClose}>
+          <ListItemText primary="About Me" />
+        </ListItem>
+        <ListItem button component={Link} to="/my-school" onClick={onClose}>
+          <ListItemText primary="My School" />
+        </ListItem>
+        <ListItem button component={Link} to="/contact" onClick={onClose}>
+          <ListItemText primary="Contact" />
+        </ListItem>
+      </List>
+    </Drawer>
+  );
 };
 
-function AboutMe() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    axios.get("http://localhost:5002/about")
-      .then((response) => setData(response.data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
-
-  if (!data) return <p>Loading...</p>;
-
-  return (
-    <div style={styles.container}>
-      <Avatar
-        alt={data.name}
-        src="https://png.pngtree.com/thumb_back/fw800/background/20240513/pngtree-cute-anime-boy-listening-music-image_15731154.jpg"
-        sx={styles.avatar}
-      />
-      <h1>About Me</h1>
-      <p>{data.description}</p>
-      <h2>Hobbies</h2>
-      <ul>
-        {data.hobbies.map((hobby, index) => (
-          <li key={index}>{hobby}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default AboutMe;
+export default Sidebar;
