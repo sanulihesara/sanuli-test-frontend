@@ -1,21 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Avatar } from "@mui/material";
+import { Avatar, Container, Typography, CircularProgress, List, ListItem } from "@mui/material";
 import axios from "axios";
-
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    padding: "2rem",
-    textAlign: "center",
-  },
-  avatar: {
-    width: 200,
-    height: 200,
-    marginBottom: "1.5rem",
-  },
-};
 
 function AboutMe() {
   const [data, setData] = useState(null);
@@ -26,24 +11,31 @@ function AboutMe() {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  if (!data) return <p>Loading...</p>;
+  if (!data) return (
+    <Container maxWidth="sm" style={{ textAlign: "center", padding: "2rem" }}>
+      <CircularProgress />
+      <Typography variant="h6" style={{ marginTop: "1rem" }}>Loading...</Typography>
+    </Container>
+  );
 
   return (
-    <div style={styles.container}>
+    <Container maxWidth="sm" style={{ textAlign: "center", padding: "2rem" }}>
       <Avatar
         alt={data.name}
         src="https://png.pngtree.com/thumb_back/fw800/background/20240513/pngtree-cute-anime-boy-listening-music-image_15731154.jpg"
-        sx={styles.avatar}
+        sx={{ width: 200, height: 200, margin: "auto", marginBottom: "1.5rem" }}
       />
-      <h1>About Me</h1>
-      <p>{data.description}</p>
-      <h2>Hobbies</h2>
-      <ul>
+      <Typography variant="h4" gutterBottom>About Me</Typography>
+      <Typography variant="body1" paragraph>{data.description}</Typography>
+      <Typography variant="h5" gutterBottom>Hobbies</Typography>
+      <List>
         {data.hobbies.map((hobby, index) => (
-          <li key={index}>{hobby}</li>
+          <ListItem key={index}>
+            <Typography variant="body1">{hobby}</Typography>
+          </ListItem>
         ))}
-      </ul>
-    </div>
+      </List>
+    </Container>
   );
 }
 
