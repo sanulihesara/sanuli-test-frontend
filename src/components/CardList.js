@@ -19,6 +19,11 @@ const CardList = ({ showCards }) => {
       title: "Always Loved Photography",
       description: "I love to take photos. The person who made me love photography was my friend Ashini. She is a very good photographer for age. She signed me up to the Photography Club in school. Since we both don't have a camera her and mother and mine decieded to buy us one to share. It was our first camera and it had areally good quality. We both love to take photos of animals in safari also known and wild life and landscapes. Ashini gave me a lot of helpful tips to take beautiful photos. We will be continuing our work and will improve more and more.",
       image: "https://images.squarespace-cdn.com/content/v1/5da149f5863db20997888fc3/1602056190431-C0OT2CBBCGKGSL1U0VYC/element5-digital-7oOOcPuHhIk-unsplash.jpg"
+    },
+    {
+      title: "Love To Read Sherlock Holmes Books",
+      description: "I was actually a person who used to hate reading any book. Specially Sherlock Holmes beacuse I thought it was uselessand boring. I hated it even more when cousins made me read it. But when I started reading the first book I was so suprised why did i ever underestimated this book. The book was great since it was filled with curiosity and adventure. I finished reading these books but still most of the time I read the same books over and over again. There are also somethings that you can learn from this too.",
+      image: "https://i.pinimg.com/736x/fc/2f/e1/fc2fe1ad2fedb692a52ad78d5f30a9cc.jpg"
     }
   ];
 
