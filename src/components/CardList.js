@@ -24,6 +24,11 @@ const CardList = ({ showCards }) => {
       title: "Love To Read Sherlock Holmes Books",
       description: "I was actually a person who used to hate reading any book. Specially Sherlock Holmes beacuse I thought it was uselessand boring. I hated it even more when cousins made me read it. But when I started reading the first book I was so suprised why did i ever underestimated this book. The book was great since it was filled with curiosity and adventure. I finished reading these books but still most of the time I read the same books over and over again. There are also somethings that you can learn from this too.",
       image: "https://i.pinimg.com/736x/fc/2f/e1/fc2fe1ad2fedb692a52ad78d5f30a9cc.jpg"
+    },
+    {
+      title: "Travelling",
+      description: "I am a risk-taker. And I an't change it since I was borrn with. I love to travel a lot. I wasn't a kid right now I would have finished travelling Sri Lanka and might have started travelling other countries with my cousin Vosandi who is almost similar to me. I really love to climb mountains, go zip linning and bungee jumping and I have only don zip linning and climbing moutains. I hope in the future I would be able to go bungee jumping. I also want to go to South Korea and Canada in Autumn and the Winter seasons. I have heard that it is very beautiful. ",
+      image: "https://www.ecozipadventures.co.nz/wp-content/uploads/2021/05/EcoZip-Dec2020-697-1024x683.jpg"
     }
   ];
 
