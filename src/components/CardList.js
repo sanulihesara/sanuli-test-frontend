@@ -8,12 +8,12 @@ const CardList = ({ showCards }) => {
     {
       title: "Interested in playing guitar",
       description: "I've been playing guitar for about three years now and have improved my skills. I play both rhythm and lead guitar and have also performed in a mini concert with my friends in our music class. Our teacher Sir Miuranga is very supportive and always helps us; because of that, our love for music never fades.",
-      image: "https://example.com/guitar.jpg"
+      image: "https://images3.alphacoders.com/823/823236.jpg"
     },
     {
       title: "Interested in playing badminton",
       description: "I've been playing badminton since grade 7, and now I attend an academy. There are two coaches who train us, Coach Sahan and Coach Nishan. I also met two new friends, Gigiri, who is five years older than me, and Siyath, who is one year older. When playing doubles at the academy, almost every time, Siyath and I are doubles partners. He and Gigiri help me with my mistakes and guide me like two coaches. I love playing badminton even more now since I have two friends to support and guide me.",
-      image: "https://example.com/badminton.jpg"
+      image: "https://www.shutterstock.com/image-photo/asian-badminton-player-holds-racket-600nw-2242240877.jpg"
     }
   ];
 
