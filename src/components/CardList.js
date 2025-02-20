@@ -29,6 +29,11 @@ const CardList = ({ showCards }) => {
       title: "Travelling",
       description: "I am a risk-taker, and I can’t change that—it’s just part of who I am. I love to travel, and if I weren’t still a kid, I would have already explored all of Sri Lanka and might have even started traveling to other countries with my cousin Vosandi, who is just like me. I have a passion for adventure and enjoy activities like mountain climbing, zip-lining, and bungee jumping. So far, I’ve only experienced zip-lining and mountain climbing, but I hope to try bungee jumping in the future. I also dream of visiting South Korea and Canada during autumn and winter, as I’ve heard they are breathtakingly beautiful during those seasons.",
       image: "https://www.ecozipadventures.co.nz/wp-content/uploads/2021/05/EcoZip-Dec2020-697-1024x683.jpg"
+    },
+    {
+      title: "Web Development",
+      description: "I am a web developer. My teacher, Mr. Nipuna Rambukkange, is very kind to his students and always helps us with difficult tasks. From day one, he has always been there for us and never lets us miss a class. Even if we do, he sends us the recording and helps us catch up during the next session. He never gets mad at us or makes fun of us for making mistakes. Thanks to him, my classmates and I have successfully passed our first level, and we will be completing our second level by the end of this month. We truly appreciate him and owe him a big 'Thank You' for teaching us advanced lessons and guiding us through challenges. I look forward to continuing my lessons with him and learning even more as I grow.",
+      image: "https://t3.ftcdn.net/jpg/02/14/53/92/360_F_214539232_YnUrtuwUEt84gHuU0qG8l7OwZvH4rnPG.jpg"
     }
   ];
 
