@@ -1,10 +1,47 @@
-# Getting Started with Create React App
+# 🌟 About Myself
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello! My name is Sanuli Cooray.
+I am 14 years old and from Wijerama.
 
-## Available Scripts
+I've been passionate about web development for almost two years, starting in 2023.
+Currently, I study at Musaeus College Colombo 07.
 
-In the project directory, you can run:
+I love playing badminton and enjoy swimming. Unlike many other girls, I absolutely love rugby, and my favorite team is the All Blacks (New Zealand).
+
+I don’t really like most flowers, but there are two I truly love: Cherry Blossoms (Sakura) and Red Roses.
+
+I’m a huge animal lover and have a dog and three cats.
+
+Some people think I look cold and distant, but those who truly know me understand that I am supportive, kind, and warm-hearted.
+
+💡 Special Thanks
+The one who helped me the most in this journey is Mr. Nipuna Ranbukkange.
+He has been an amazing teacher, guiding my classmates and me through every step and supporting us when we faced challenges. His dedication and encouragement mean a lot!
+
+## 🚀 About My Project
+
+This portfolio website showcases who I am, including:
+✅ My hobbies
+✅ My family
+✅ My school and co-curricular activities
+✅ My likes and dislikes
+✅ My friends
+
+🛠️ Technologies Used
+Frontend: React (with React Hooks like useState and useEffect)
+Backend: Node.js & Express
+Styling: CSS Modules & Styled-Components
+API Integration: RESTful APIs
+Performance Optimizations: Lazy Loading, Code Splitting
+Authentication & Security: User Authentication, Form Validation
+Fully Responsive: Works on all devices
+💡 AI Assistance
+To create this project, I received guidance and support from AI ChatGPT, which helped with:
+✔️ Code improvements
+✔️ Debugging
+✔️ Learning new web development concepts
+
+I am continuously enhancing this project by adding new features, improving UI/UX, and ensuring accessibility.
 
 ### `npm start`
 
